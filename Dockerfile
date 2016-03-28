@@ -22,4 +22,4 @@ RUN cd /home/c9 && \
 # Volumes for development pages and apps
 VOLUME ["/home/c9/dev", "/home/c9/www"]
 
-EXPOSE 3000
+EXPOSE 3000 3001 5858 8080
