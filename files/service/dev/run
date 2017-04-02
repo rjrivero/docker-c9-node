@@ -2,11 +2,11 @@
 export HOME=/home/c9
 export C9USER=c9
 
-cd ${HOME}/dev
-. ../.nvm/nvm.sh
-
-if [ -f ${HOME}/dev/server.js ]; then
-  exec /sbin/setuser ${C9USER} node server.js
+if [ -f ${HOME}/dev/server/app.js ]; then
+  cd ${HOME}/dev/server
+  . $HOME/.nvm/nvm.sh
+  exec /sbin/setuser ${C9USER} node app.js
 else
   exec sleep infinity
 fi
+
