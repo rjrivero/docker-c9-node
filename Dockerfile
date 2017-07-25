@@ -5,11 +5,11 @@ FROM rjrivero/c9
 MAINTAINER Rafael Rivero <private@email.com>
 
 # NVM version
-ENV NVM_VERSION 0.33.1
+ENV NVM_VERSION 0.33.2
 
 # Node version to install
 # v6 current LTS
-ENV NODE_VERSION v6
+ENV NODE_VERSION v8
 
 # Add install script
 ADD files/install.sh /tmp/install.sh

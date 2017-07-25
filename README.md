@@ -1,7 +1,7 @@
 Cloud9 IDE container with NVM
 =============================
 
-Cloud9 IDE SDK container with git, python, nvm and node LTS (4.2) installed, with the *typescript* and *typings* modules.
+Cloud9 IDE SDK container with git, python, nvm and node LTS (8) installed, with the *typescript* and *typings* modules.
 
 To build the container:
 
