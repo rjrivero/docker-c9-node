@@ -15,5 +15,7 @@ nvm alias default ${NODE_VERSION}
 
 # Install typescript development libs
 nvm use ${NODE_VERSION}
+npm install -g npm@latest
 npm install typescript
+npm install @types/node
 npm install typings

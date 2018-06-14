@@ -5,7 +5,7 @@ FROM rjrivero/c9
 MAINTAINER Rafael Rivero <private@email.com>
 
 # NVM version
-ENV NVM_VERSION 0.33.2
+ENV NVM_VERSION 0.33.11
 
 # Node version to install
 # v6 current LTS
