@@ -2,11 +2,20 @@
 export HOME=/home/c9
 export C9USER=c9
 
+# Old location of the app
 if [ -f ${HOME}/dev/server/app.js ]; then
   cd ${HOME}/dev/server
   . $HOME/.nvm/nvm.sh
   exec /sbin/setuser ${C9USER} node app.js
 else
-  exec sleep infinity
+  # New location of the app
+  if [ -f ${HOME}/dev/package.json ]; then
+    cd ${HOME}/dev
+    . $HOME/.nvm/nvm.sh
+    exec /sbin/setuser ${C9USER} npm start
+  else
+    # No app at all
+    exec sleep infinity
+  fi
 fi
 
